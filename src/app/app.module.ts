@@ -5,18 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewallFriendsComponent } from './viewall-friends/viewall-friends.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AddFriendComponent
+  },
+  {
+    path:"/view",
+    component:ViewallFriendsComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddFriendComponent
+    AddFriendComponent,
+    ViewallFriendsComponent
   ],
   imports: [
     BrowserModule,
