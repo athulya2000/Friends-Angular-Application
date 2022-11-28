@@ -5,23 +5,23 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
-                </div>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div> 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Friend Name</label>
-                    <input type="text" class="form-control">
+                    <input name="friendName" [(ngModel)]="friendName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Describe Your Friend</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" id="" cols="30" rows="10" class="form-control"></textarea>
                    
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Friend Nick Name</label>
-                    <input type="text" class="form-control">
+                    <input name="friendNickName" [(ngModel)]="friendNickName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-info">Submit</button>
+                    <button (click)="readValue()" class="btn btn-info">Submit</button>
                 </div>
             </div>
         </div>
